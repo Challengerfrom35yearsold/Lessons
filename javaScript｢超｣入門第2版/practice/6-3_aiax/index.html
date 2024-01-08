@@ -6,7 +6,7 @@
 <title>テンプレート</title>
 <link href="../../_common/images/favicon.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
-<link href="../../_common/css/style.css" rel="stylesheet">
+<link href="ajax_style.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -40,5 +40,19 @@
 <p>JavaScript Samples</p>
 </div><!-- /.container -->
 </footer>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+  'use strict';
+  $(document).ready(function(){
+    $.ajax({url: 'data.json', dataType: 'json'})
+    .done(function(data){
+      console.log(data);
+    })
+    .fail(function(){
+      window.alert('読み込みエラー');
+    });
+  });
+
+</script>
 </body>
 </html>
