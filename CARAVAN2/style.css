@@ -7,6 +7,26 @@
 header {
   width: 100%;
   background-color: red;
+  position: relative;
+}
+
+.heading-logo {
+  text-align: center;
+}
+
+.social {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.nav-list {
+  text-align: center;
+}
+
+.nav-list-item {
+  display: inline-block;
+  list-style: none;
 }
 
 .main-visual {
