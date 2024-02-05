@@ -70,6 +70,23 @@ header {
   border-bottom: 10px solid #f7f7f7;
 }
 
+.blog-item {
+  display: flex;
+
+}
+
+.blog-image {
+  height: 200px;
+}
+
+/*.blog-date {*/
+/*  display: inline-block;*/
+/*}*/
+
+/*.category {*/
+/*  display: inline-block;*/
+/*}*/
+
 .sideber {
   width: 300px;
   height: 900px;
