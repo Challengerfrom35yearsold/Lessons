@@ -62,7 +62,6 @@ header {
 
 .blog {
   width: 700px;
-  height: 900px;
 }
 
 .blog-heading {
@@ -72,20 +71,25 @@ header {
 
 .blog-item {
   display: flex;
-
+  margin-bottom: 20px;
 }
 
 .blog-image {
   height: 200px;
+  margin-right: 20px;
 }
 
-/*.blog-date {*/
-/*  display: inline-block;*/
-/*}*/
+.blog-text {
+  line-height: px;
+}
 
-/*.category {*/
-/*  display: inline-block;*/
-/*}*/
+.blog-date {
+  display: inline-block;
+}
+
+.category {
+  display: inline-block;
+}
 
 .sideber {
   width: 300px;
