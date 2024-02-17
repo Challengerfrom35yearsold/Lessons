@@ -116,39 +116,25 @@ header {
 }
 
 .instagram-contents {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Flexbox を使用して子要素を横に配置 */
+  flex-wrap: wrap; /* 親要素が子要素を折り返し表示するように設定 */
+}
+
+.instagram-box {
+  flex: 0 0 50%; /* 子要素の幅を50%に設定し、折り返し表示されるようにする */
+  box-sizing: border-box; /* ボックスモデルが適用されるようにする */
+  padding: 5px; /* 画像間の余白を追加 */
 }
 
 .instagram-image {
-  width: 110px;
-  padding-top: 50px;
-  /*paddingを消すと画像が消える*/
-  background-size: contain;
+  width: 100%; /* 画像を親要素に合わせて表示 */
+  height: auto; /* 高さを自動調整してアスペクト比を保持 */
 }
 
-.instagram-image:nth-child(1) {
-  background-image: url(img/airport.jpg);
-}
-
-.instagram-image:nth-child(2) {
-   background-image: url(img/japan.jpg);
-}
-
-.instagram-image:nth-child(3) {
-  background-image: url(img/snow.jpg);
-}
-
-.instagram-image:nth-child(4) {
-  background-image: url(img/japan2.jpg);
-}
-
-.instagram-image:nth-child(5) {
-  background-image: url(img/lake.jpg);
-}
-
-.instagram-image:nth-child(6) {
-  background-image: url(img/road.jpg);
+.categories-heading {
+  text-align: center;
+  border-bottom: 10px solid #696969;
+  margin-bottom: 10px;
 }
 
 footer {
